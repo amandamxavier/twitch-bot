@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "bot-twitch"
+name = "twitch-bot"
 version = "1.0.0"
-description = "Twitch bot for my channel"
+description = "My Twitch channel bot"
 authors = ["Amanda Martins Xavier"]
 license = "MIT"
 readme = "README.md"
