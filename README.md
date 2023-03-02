@@ -5,6 +5,7 @@
 ## 📋 Requirements
 
 - [Python 3.11](https://www.python.org/)
+- [Poetry 1.3.2](https://python-poetry.org/)
 - [TwitchIO 2.5.0](https://twitchio.dev/en/latest/)
 
 ## 🔎 Usage
