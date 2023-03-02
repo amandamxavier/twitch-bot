@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bot-twitch"
+version = "1.0.0"
+description = "Twitch bot for my channel"
+authors = ["Amanda Martins Xavier"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+twitchio = "^2.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bot = "bot.bot:run"
