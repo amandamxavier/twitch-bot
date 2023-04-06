@@ -2,6 +2,8 @@
 
 > ❓ A simple Twitch channel bot created on my live streamings for helping and interacting with my viewers/chat.
 
+---
+
 ## 📋 Requirements
 
 ### 🤖 Production
@@ -23,30 +25,44 @@
 - [Mkdocstrings-python (^0.9.0)](https://mkdocstrings.github.io/python/)
 - [Termynal (^0.2.1)](https://daxartio.github.io/termynal/)
 
+---
+
 ## 🔎 Usage
 
 1. Clone the repo to your machine.
 2. Update or install dependencies:
    
-   ```console
-    poetry install
-    ```
+<!-- termynal -->
+
+```console
+$ poetry install
+---> 100%
+```
 
 3. Setup you config.ini with your Twitch channel data
 4. Change your commands messages or create new ones
 5. Start the project:
    
-   ```console
-    poetry run bot
-    ```
+<!-- termynal -->
+
+```console
+$ poetry run bot
+🎉 | Successfully connected to the channel @amandamartinsdev on Twitch.
+```
+
+---
 
 ## 📋 Issues
 
 Feel free to open an issue if you find a bug or have a suggestion, so we can discuss the best way to improve or fix it.
 
+---
+
 ## 👋 Contributing
 
 You're always welcome to contribute to this project, just create your pull request, and wait for the review.
+
+---
 
 ## 📜 License
 

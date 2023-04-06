@@ -1,0 +1,32 @@
+site_name: Twitch Bot
+site_description: A simple Twitch channel bot created on my live streamings for helping and interacting with my viewers/chat.
+site_url: https://amandamartins.dev/twitch-bot/
+
+repo_url: https://github.com/amandamartinsdev/twitch-bot
+repo_name: amandamartinsdev/twitch-bot
+edit_uri: tree/main/docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+plugins:
+  - termynal
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [twitch_bot]

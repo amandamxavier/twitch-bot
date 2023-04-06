@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "twitch-bot"
 version = "1.0.0"
-description = "My Twitch channel bot"
+description = "A simple Twitch channel bot created on my live streamings for helping and interacting with my viewers/chat."
 authors = ["Amanda Martins Xavier"]
 license = "MIT"
 readme = "README.md"
@@ -16,6 +16,13 @@ blue = "^0.9.1"
 isort = "^5.12.0"
 taskipy = "^1.10.4"
 
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.1.5"
+mkdocstrings = "^0.21.2"
+mkdocstrings-python = "^0.9.0"
+termynal = "^0.2.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
@@ -29,3 +36,4 @@ line_length = "79"
 
 [tool.taskipy.tasks]
 lint = "blue . && isort ."
+docs = "mkdocs serve"
