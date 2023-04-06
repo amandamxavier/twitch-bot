@@ -1,8 +1,7 @@
 from twitchio.ext import commands
 
-from .utils.config import TOKEN, USERNAME, CHANNELS
-from .utils.suppress import Suppress
-from .commands.hello import Hello
+from .config import TOKEN, USERNAME, CHANNELS, BOTS
+from .suppress import Suppress
 
 
 def run():
@@ -13,7 +12,7 @@ class Bot(commands.Bot):
     def __init__(self):
         super().__init__(token=TOKEN, nick=USERNAME, prefix='!', initial_channels=CHANNELS)
 
-        self.hello = Suppress('hello.tmp')
+        self.greetings = Suppress('greetings.tmp')
 
     async def event_ready(self):
         self.channel = self.get_channel(self.nick)
@@ -22,7 +21,12 @@ class Bot(commands.Bot):
 
     async def event_message(self, message):
         print(f'💬 | {message.timestamp} | @{message.author.name}: {message.content}.')
-        await Hello.handle_hello(self, message)
+        await self.handle_greeting(self, message)
 
     async def event_command_error(self, error):
         print(error)
+
+    async def handle_greeting(self, message):
+        name = message.author.name
+        if name not in BOTS and self.greetings.add(name):
+            await message.channel.send(f'{name} olá! 👋')

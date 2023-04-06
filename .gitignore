@@ -7,7 +7,7 @@ __pycache__/
 # Configurations
 config.ini
 
-# Runtine
-hello.tmp.bak
-hello.tmp.dat
-hello.tmp.dir
+# Runtime
+greetings.tmp.bak
+greetings.tmp.dat
+greetings.tmp.dir
