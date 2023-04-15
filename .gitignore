@@ -1,13 +1,23 @@
-# IDE
-.vscode
+# Editor
+/.vscode/
+.editorconfig
+.idea
+.idea_modules/
+out/
 
 # Python
 __pycache__/
 
-# Configurations
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 config.ini
 
 # Runtime
-greetings.tmp.bak
-greetings.tmp.dat
-greetings.tmp.dir
+**.tmp
+**.tmp.**
