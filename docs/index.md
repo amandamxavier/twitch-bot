@@ -22,7 +22,7 @@ $ poetry install
 ---> 100%
 ```
 
-3. Setup you config.ini with your Twitch channel data
+3. Setup your `.env` with your Twitch channel data, you can use the `.env.example` as a template.
 4. Change your commands messages or create new ones
 5. Start the project:
    
