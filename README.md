@@ -8,6 +8,7 @@
 
 - [Python (^3.11)](https://www.python.org/)
 - [TwitchIO (^2.6.0)](https://twitchio.dev/)
+- [Colorama (^0.4.6)](https://pypi.org/project/colorama/)
 
 ### 🧰 Development
 
@@ -18,7 +19,7 @@
 
 ### 📚 Documentation
 
-- [Mkdocs-material (^9.1.5)](https://squidfunk.github.io/mkdocs-material/)
+- [Mkdocs-material (^9.1.6)](https://squidfunk.github.io/mkdocs-material/)
 - [Mkdcostrings (^0.20.0)](https://mkdocstrings.github.io/)
 - [Mkdocstrings-python (^0.9.0)](https://mkdocstrings.github.io/python/)
 - [Termynal (^0.2.1)](https://daxartio.github.io/termynal/)
@@ -50,4 +51,4 @@ You're always welcome to contribute to this project, just create your pull reque
 
 ## 📜 License
 
-This project is made under the MIT license, for more information about its possible use, modification, and sharing, [click here](LICENSE).
+This project is made under the GPL-3.0 license, for more information about its possible use, modification, and sharing, [click here](https://github.com/amandamartinsdev/twitch-bot/blob/main/LICENSE).

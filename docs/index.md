@@ -6,24 +6,7 @@
 
 ## 📋 Requirements
 
-### 🤖 Production
-
-- [Python (^3.11)](https://www.python.org/)
-- [TwitchIO (^2.6.0)](https://twitchio.dev/)
-
-### 🧰 Development
-
-- [Poetry (^1.4.2)](https://python-poetry.org/)
-- [Blue (^0.9.1)](https://blue.readthedocs.io/en/latest/)
-- [iSort (^5.12.0)](https://pycqa.github.io/isort/)
-- [TaskiPy (^1.10.4)](https://github.com/taskipy/taskipy)
-
-### 📚 Documentation
-
-- [Mkdocs-material (^9.1.5)](https://squidfunk.github.io/mkdocs-material/)
-- [Mkdcostrings (^0.20.0)](https://mkdocstrings.github.io/)
-- [Mkdocstrings-python (^0.9.0)](https://mkdocstrings.github.io/python/)
-- [Termynal (^0.2.1)](https://daxartio.github.io/termynal/)
+You can check the requirements for this project on the [requirements](requirements) page.
 
 ---
 
@@ -66,4 +49,4 @@ You're always welcome to contribute to this project, just create your pull reque
 
 ## 📜 License
 
-This project is made under the MIT license, for more information about its possible use, modification, and sharing, [click here](LICENSE).
+This project is made under the GPL-3.0 license, for more information about its possible use, modification, and sharing, [click here](LICENSE).
