@@ -1,10 +1,11 @@
-from configparser import ConfigParser
+import os
 
-config = ConfigParser()
-config.read('config.ini', encoding='utf-8')
+from dotenv import load_dotenv
 
-TOKEN = config.get('config', 'token')
-USERNAME = config.get('config', 'username')
-CHANNELS = config.get('config', 'channels').split()
-BOTS = config.get('config', 'bots').split()
-BOTS.append(USERNAME)
+load_dotenv()
+
+TOKEN = os.getenv('TOKEN')
+NICKNAME = os.getenv('NICKNAME')
+CHANNELS = os.getenv('CHANNELS').split(',')
+BOTS = os.getenv('BOTS').split(',')
+BOTS.append(NICKNAME)

@@ -1,7 +1,7 @@
 from colorama import Fore
 from twitchio.ext import commands
 
-from .config import BOTS, CHANNELS, TOKEN, USERNAME
+from .config import BOTS, CHANNELS, TOKEN, NICKNAME
 from .suppress import Suppress
 
 
@@ -13,14 +13,14 @@ def run():
 class Bot(commands.Bot):
     def __init__(self):
         super().__init__(
-            token=TOKEN, nick=USERNAME, prefix='!', initial_channels=CHANNELS
+            token=TOKEN, nick=NICKNAME, prefix='!', initial_channels=CHANNELS
         )
 
         self.greetings = Suppress('greetings.tmp')
 
     async def event_ready(self):
         self.channel = self.get_channel(self.nick)
-
+        
         print(
             Fore.GREEN
             + f'🎉 | Successfully connected to the channel @{self.nick} on Twitch.'
