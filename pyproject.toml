@@ -2,8 +2,11 @@
 name = "twitch-bot"
 version = "1.0.0"
 description = "A simple Twitch channel bot created on my live streamings for helping and interacting with my viewers/chat."
-authors = ["Amanda Martins Xavier"]
-license = "MIT"
+homepage = "https://twitch.tv/amandamartinsdev"
+repository = "https://github.com/amandamartinsdev/twitch-bot"
+documentation = "https://amandamartinsdev.github.io/twitch-bot/"
+authors = ["Amanda Martins Xavier <hi@amandamartins.dev>"]
+license = "GPL-3.0"
 readme = "README.md"
 packages = [{include = "bot"}]
 
