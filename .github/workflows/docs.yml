@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-  #   paths:
-  #     - "docs/**"
-  # pull_request:
-  #   paths:
-  #     - "docs/**"
+    paths:
+      - "docs/**"
+  pull_request:
+    paths:
+      - "docs/**"
 
 permissions:
   contents: write
@@ -27,4 +27,3 @@ jobs:
           path: .cache
       - run: pip install mkdocs-material mkdocstrings mkdocstrings-python termynal
       - run: mkdocs gh-deploy --force
-      
