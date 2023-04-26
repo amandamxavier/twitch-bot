@@ -1,7 +1,7 @@
 from colorama import Fore
 from twitchio.ext import commands
 
-from .config import BOTS, CHANNELS, TOKEN, NICKNAME
+from .config import BOTS, CHANNELS, NICKNAME, TOKEN
 from .suppress import Suppress
 
 
@@ -79,39 +79,43 @@ class Bot(commands.Bot):
 
     @commands.command(name='configurações')
     async def cmd_settings(self, ctx):
-        await ctx.send(f'{ctx.author.name}, as configurações do meu VSCode são:')
-        await ctx.send('https://gist.github.com/AmandaMartinsDev/d1b0ff9e99928d32a0145ab4d94b003e')
+        await ctx.send(
+            f'{ctx.author.name}, as configurações do meu VSCode são:'
+        )
+        await ctx.send(
+            'https://gist.github.com/AmandaMartinsDev/d1b0ff9e99928d32a0145ab4d94b003e'
+        )
 
     @commands.command(name='tema')
     async def cmd_theme(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, o tema do meu VSCode é o Monokai Pro (Filter
-            Machine).'''
+            f"""{ctx.author.name}, o tema do meu VSCode é o Monokai Pro (Filter
+            Machine)."""
         )
 
     @commands.command(name='icones')
     async def cmd_icons(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, o pacote de ícones do meu VSCode é o 
-            Material Icon.'''
+            f"""{ctx.author.name}, o pacote de ícones do meu VSCode é o 
+            Material Icon."""
         )
 
     @commands.command(name='fonte')
     async def cmd_font(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, minha fonte do VSCode é a JetBrainsMono Nerd
-            Font Mono, com as ligatures ativadas.'''
+            f"""{ctx.author.name}, minha fonte do VSCode é a JetBrainsMono Nerd
+            Font Mono, com as ligatures ativadas."""
         )
 
     @commands.command(name='terminal')
     async def cmd_terminal(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, meu terminal é o padrão do elementary OS, 
-            com bash.'''
+            f"""{ctx.author.name}, meu terminal é o padrão do elementary OS, 
+            com bash."""
         )
         await ctx.send(
-            '''Mas eu modifiquei com a fonte Roboto Mono, da Nerd Fonts, e a 
-            cor de fundo é #263136.'''
+            """Mas eu modifiquei com a fonte Roboto Mono, da Nerd Fonts, e a 
+            cor de fundo é #263136."""
         )
         await ctx.send('E o tema do oh-my-posh é o Dracula.')
         await ctx.send('Temos um tutorial: https://bit.ly/3qTqJ3S')
@@ -141,7 +145,7 @@ class Bot(commands.Bot):
     @commands.command(name='doação')
     async def cmd_donate(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, https://streamlabs.com/amandamartinsdev/tip.'''
+            f"""{ctx.author.name}, https://streamlabs.com/amandamartinsdev/tip."""
         )
 
     @commands.command(name='apelidos')
@@ -218,35 +222,35 @@ class Bot(commands.Bot):
     @commands.command(name='caverna')
     async def cmd_caverna(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, olha o Patocórnio ai! 
-            amanda257Patocornio'''
+            f"""{ctx.author.name}, olha o Patocórnio ai! 
+            amanda257Patocornio"""
         )
 
     @commands.command(name='feministech')
     async def cmd_feministech(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, nós amamos a amanda257Feministech !'''
+            f"""{ctx.author.name}, nós amamos a amanda257Feministech !"""
         )
 
     @commands.command(name='sejoga')
     async def cmd_se_joga(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, A "Se Joga!" nasceu com o objetivo de 
+            f"""{ctx.author.name}, A "Se Joga!" nasceu com o objetivo de 
             trazer mais mulheres para o cenário dos games no Brasil com 
             toda a segurança e apoio, sejam elas desenvolvedoras, 
             jogadoras ou produtoras de conteúdo. Confira todas as 
             novidades do projeto em 
-            https://www.instagram.com/sejoga.garota'''
+            https://www.instagram.com/sejoga.garota"""
         )
 
     @commands.command(name='linuxtips')
     async def cmd_linuxtips(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name}, a LINUXtips é uma plataforma brasileira de 
+            f"""{ctx.author.name}, a LINUXtips é uma plataforma brasileira de 
             treinamentos online, inovadora e acessível com diversos cursos 
             para você desenvolver suas habilidades em áreas como DevOps, 
             Desenvolvimento de Software e Segurança da Informação. 
-            Confira mais em https://www.linuxtips.io/'''
+            Confira mais em https://www.linuxtips.io/"""
         )
 
     @commands.command(name='infopreta')
