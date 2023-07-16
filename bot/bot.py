@@ -89,8 +89,10 @@ class Bot(commands.Bot):
     @commands.command(name='tema')
     async def cmd_theme(self, ctx):
         await ctx.send(
-            f"""{ctx.author.name}, o tema do meu VSCode é o Monokai Pro (Filter
-            Machine)."""
+            f'{ctx.author.name}, o tema do meu VSCode é o Min:'
+        )
+        await ctx.send(
+            'https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme'
         )
 
     @commands.command(name='icones')
@@ -103,29 +105,21 @@ class Bot(commands.Bot):
     @commands.command(name='fonte')
     async def cmd_font(self, ctx):
         await ctx.send(
-            f"""{ctx.author.name}, minha fonte do VSCode é a JetBrainsMono Nerd
+            f"""{ctx.author.name}, minha fonte do VSCode é a FiraCode Nerd
             Font Mono, com as ligatures ativadas."""
         )
 
     @commands.command(name='terminal')
     async def cmd_terminal(self, ctx):
         await ctx.send(
-            f"""{ctx.author.name}, meu terminal é o padrão do elementary OS, 
-            com bash."""
+            f"""{ctx.author.name}, meu terminal é o Windows Terminal com
+            Powershell."""
         )
         await ctx.send(
-            """Mas eu modifiquei com a fonte Roboto Mono, da Nerd Fonts, e a 
-            cor de fundo é #263136."""
+            'Mas eu modifiquei com a fonte FiraCode Mono, da Nerd Fonts.'
         )
         await ctx.send('E o tema do oh-my-posh é o Dracula.')
         await ctx.send('Temos um tutorial: https://bit.ly/3qTqJ3S')
-
-    @commands.command(name='linux')
-    async def cmd_linux(self, ctx):
-        await ctx.send(
-            f'{ctx.author.name}, minha distro é o elementary OS 7 Horus.'
-        )
-        await ctx.send('https://elementary.io/')
 
     @commands.command(name='playlists')
     async def cmd_playlists(self, ctx):
@@ -163,9 +157,8 @@ class Bot(commands.Bot):
     @commands.command(name='sobre')
     async def cmd_about(self, ctx):
         await ctx.send(
-            f"""{ctx.author.name}, e aí? Beleza? Tenho 26 anos, sou Application 
-            Developer na IBM, natural de São Paulo, capital, e morando em 
-            Santa Catarina."""
+            f"""{ctx.author.name}, e aí? Beleza? Tenho 26 anos, sou desenvolvedora
+            Fullstack, natural de São Paulo, capital."""
         )
 
     @commands.command(name='ghsponsors')
